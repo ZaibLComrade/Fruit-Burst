@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<!-- Font Awesome Kit -->
+	<script src="https://kit.fontawesome.com/97c53add55.js" crossorigin="anonymous"></script>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<title>Fruit Burst</title>
+	<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+	<!-- Stylesheet -->
 	<link rel="stylesheet" href="./styles.css">
+
+<style>
+/* Added missing font weights */
+@font-face {
+	font-family: 'Lato';
+	src: url(./fonts/Lato-Medium.ttf) format('truetype');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url(./fonts/Lato-Semibold.ttf) format('truetype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url(./fonts/Lato-Bold.ttf) format('truetype');
+	font-weight: 800;
+}
+.font-lato {
+	font-family: 'Lato', sans-serif;
+}
+</style>
+
 </head>
-<body>
+<body>	
+	<!--
+		Note: '{{{' and '}}}' are vim fold markers
+	-->
+
+	<!-- Header -->
+	<!-- {{{ -->
+	<header class="container mx-auto">
+		<!-- Navbar Section -->
+		<!-- {{{ -->
+		<section>
+			<nav class="text-[#FFF] flex justify-between items-center py-8 rounded-[600px] px-14 bg-custom-coral-red mx-auto">
+				<!-- Menu -->					
+				<div class="">
+					<ul class="flex justify-around flex-1 font-medium gap-[30px] text-lg">
+						<li>Home</li>
+						<li>About Us</li>
+						<li>Shop</li>
+						<li>All Fruits</li>
+					</ul>		
+				</div>
+
+				<!-- Logo -->
+				<div class="flex items-center flex-1 justify-center font-bold text-[40px] text-right gap-4">
+					<img src="./images/logo.png" alt="">	
+					<h1>Fruit Burst</h1>
+				</div>
+
+				<!-- Search -->
+				<div class="relative flex items-center flex-1 ">
+					<input class="py-[18px] text-custom-black pl-7 rounded-[50px] w-full" placeholder="Search" type="text" name="SearchBar" id="search">	
+					<i class="absolute right-0 text-custom-black pr-[30px] fa-solid fa-magnifying-glass"></i>
+				</div>
+			</nav>	
+		</section>
+		<!-- }}} -->	
+
+	</header>
+	<!-- }}} -->
+	
+	<!-- Main -->
+	<!-- {{{ -->
+	<main>
+		
+	</main>
+	<!-- }}} -->
+
+
 </body>
 </html>
