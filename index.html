@@ -48,13 +48,13 @@
 
 	<!-- Header -->
 	<!-- {{{ -->
-	<header class="container px-6 mx-auto space-y-16">
+	<header class="container px-6 mx-auto space-y-6 md:space-y-16">
 		<!-- Navbar Section -->
 		<!-- {{{ -->
 		<section>
-			<nav class="text-[#FFF] flex justify-between items-center py-8 rounded-[600px] px-14 bg-custom-coral-red mx-auto">
+			<nav class="md:text-[#FFF] mt-[50px] font-medium md:max-lg:flex-row-reverse items-center md:font-bold flex justify-between md:max-lg:px-6 md:max-lg:py-4 lg:max-xl:px-4 py-8 rounded-[600px] px-0 md:px-14 md:bg-custom-coral-red mx-auto">
 				<!-- Menu -->					
-				<div class="">
+				<div class="hidden md:block">
 					<ul class="flex justify-around flex-1 font-medium gap-[30px] text-lg">
 						<li>Home</li>
 						<li>About Us</li>
@@ -64,23 +64,39 @@
 				</div>
 
 				<!-- Logo -->
-				<div class="flex items-center flex-1 justify-center font-bold text-[40px] text-right gap-4">
+				<div class="flex items-center lg:flex-1 justify-center font-bold text-[40px] text-right gap-4">
 					<img src="./images/logo.png" alt="">	
 					<h1>Fruit Burst</h1>
 				</div>
 
 				<!-- Search -->
-				<div class="relative flex items-center flex-1 ">
+				<div class="relative items-center flex-1 hidden lg:flex ">
 					<input class="py-[18px] text-custom-black pl-7 rounded-[50px] w-full" placeholder="Search" type="text" name="SearchBar" id="search">	
 					<i class="absolute right-0 text-custom-black pr-[30px] fa-solid fa-magnifying-glass"></i>
 				</div>
+
+				<!-- Hamburger bars -->
+				<div class="z-20 md:hidden">
+					<div class="dropdown dropdown-end">
+						<label tabindex="0" class="m-1 h-max">
+							<i class="m-auto text-2xl fa-solid fa-bars"></i>
+						</label>
+					  <ul tabindex="0" class="p-2 shadow dropdown-content menu bg-base-100 rounded-box w-52">
+						<li><a>Home</a></li>
+						<li><a>About Us</a></li>
+						<li><a>shop</a></li>
+						<li><a>All Fruits</a></li>
+					  </ul>
+					</div>
+				</div>
+
 			</nav>	
 		</section>
 		<!-- }}} -->	
 
 		<!-- Banner Section -->
 		<!-- {{{ -->
-		<section>
+		<section class="">
 			
 <div class="relative z-10 w-full rounded-lg carousel">
   <div id="slide1" class="relative w-full rounded-lg carousel-item">
