@@ -41,7 +41,7 @@
 </style>
 
 </head>
-<body>	
+<body class="font-lato">	
 	<!--
 		Note: '{{{' and '}}}' are vim fold markers
 	-->
@@ -158,8 +158,199 @@
 	
 	<!-- Main -->
 	<!-- {{{ -->
-	<main>
-		
+	<main class="container mx-auto mt-36">
+		<!-- Deal of the day -->			
+		<!-- {{{ -->
+		<section>
+			<!-- Headline -->
+			<!-- {{{ -->
+			<div class="flex items-center justify-between">
+				<!-- Texts -->
+				<div class="text-left space-y-6">
+					<h2 class="text-5xl font-extrabold text-custom-black">Deal of the day</h2>
+					<p class="text-base max-w-[615px] font-medium text-custom-black">
+						Contrary to popular belief, is not simply random text.
+						It has roots in a piece of classical Latin literature
+						from 45 BC, making it over 2000 years old.
+					</p>
+				</div>
+
+				<!-- Timer -->
+				<div>
+
+	<div class="text-center grid grid-flow-col gap-5 auto-cols-max">
+	  <div class="flex flex-col">
+		<span class="text-5xl countdown">
+		  <span style="--value:29;"></span>
+		</span>
+		days
+	  </div> 
+	  <div class="flex flex-col">
+		<span class="text-5xl countdown">
+		  <span style="--value:15;"></span>
+		</span>
+		hours
+	  </div> 
+	  <div class="flex flex-col">
+		<span class="text-5xl countdown">
+		  <span style="--value:25;"></span>
+		</span>
+		min
+	  </div> 
+	  <div class="flex flex-col">
+		<span class="text-5xl countdown">
+		  <span style="--value:8;"></span>
+		</span>
+		sec
+	  </div>
+	</div>
+
+				</div>	
+			</div>
+			<!-- }}} -->
+
+			<!-- Cards -->
+			<!-- {{{ -->
+			<div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+				<!-- Apple -->
+				<div class="card bg-base-100 border-2 py-[50px] rounded-lg border-[#12121210]">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit6.png" alt="" class="rounded-xl" />
+					</figure>
+					<div class="items-center text-center card-body">
+						<h2 class="text-2xl font-extrabold card-title text-custom-black">12.90$ - 18.85$</h2>
+						<hr class="border-[#12121210] border-1 w-4/5 my-6">
+						<p class="text-[#12121260] font-medium text-base">Apples</p>
+						<div class="rating rating-[24px] mt-6 mb-8 rating-half">
+<input type="radio" name="apple" class="rating-hidden" />
+
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-2" checked />
+<div class="w-1.5"></div>
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+						</div>
+						<div class="card-actions">
+							<button class="font-bold text-custom-coral-red">Details</button>
+						</div>
+					</div>
+				</div>	
+
+				<!-- Orange -->
+				<div class="card bg-base-100 border-2 py-[50px] rounded-lg border-[#12121210]">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit7.png" alt="" class="rounded-xl" />
+					</figure>
+					<div class="items-center text-center card-body">
+						<h2 class="text-2xl font-extrabold card-title text-custom-black">12.90$ - 18.85$</h2>
+						<hr class="border-[#12121210] border-1 w-4/5 my-6">
+						<p class="text-[#12121260] font-medium text-base">Oranges</p>
+						<div class="rating rating-[24px] mt-6 mb-8 rating-half">
+<input type="radio" name="orange" class="rating-hidden" />
+
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-2" checked />
+<div class="w-1.5"></div>
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+						</div>
+						<div class="card-actions">
+							<button class="font-bold text-custom-coral-red">Details</button>
+						</div>
+					</div>
+				</div>	
+
+				<!-- Red Dragon -->
+				<div class="card bg-base-100 border-2 py-[50px] rounded-lg border-[#12121210]">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit8.png" alt="" class="rounded-xl" />
+					</figure>
+					<div class="items-center text-center card-body">
+						<h2 class="text-2xl font-extrabold card-title text-custom-black">12.90$ - 18.85$</h2>
+						<hr class="border-[#12121210] border-1 w-4/5 my-6">
+						<p class="text-[#12121260] font-medium text-base">Red Dragon</p>
+						<div class="rating rating-[24px] mt-6 mb-8 rating-half">
+<input type="radio" name="dragon" class="rating-hidden" />
+
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-1" checked />
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+						</div>
+						<div class="card-actions">
+							<button class="font-bold text-custom-coral-red">Details</button>
+						</div>
+					</div>
+				</div>	
+
+				<!-- Bananas -->
+				<div class="card bg-base-100 border-2 py-[50px] rounded-lg border-[#12121210]">
+					<figure class="px-10 pt-10">
+						<img src="./images/fruit9.png" alt="Banana" class="rounded-xl" />
+					</figure>
+					<div class="items-center text-center card-body">
+						<h2 class="text-2xl font-extrabold card-title text-custom-black">12.90$ - 18.85$</h2>
+						<hr class="border-[#12121210] border-1 w-4/5 my-6">
+						<p class="text-[#12121260] font-medium text-base">Bananas</p>
+						<div class="rating rating-[24px] mt-6 mb-8 rating-half">
+<input type="radio" name="banana" class="rating-hidden" />
+
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-1" checked />
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+<div class="w-1.5"></div>
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-1" />
+<input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
+						</div>
+						<div class="card-actions">
+							<button class="font-bold text-custom-coral-red">Details</button>
+						</div>
+					</div>
+				</div>	
+
+			</div>	
+			<!-- }}} -->
+
+		</section>
+		<!-- }}} -->
+
 	</main>
 	<!-- }}} -->
 
