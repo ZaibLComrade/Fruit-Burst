@@ -48,11 +48,11 @@
 
 	<!-- Header -->
 	<!-- {{{ -->
-	<header class="container px-6 mx-auto space-y-6 md:space-y-16">
+	<header class="container px-5 mx-auto space-y-6 md:space-y-16">
 		<!-- Navbar Section -->
 		<!-- {{{ -->
 		<section>
-			<nav class="md:text-[#FFF] mt-[50px] font-medium md:max-lg:flex-row-reverse items-center md:font-bold flex justify-between md:max-lg:px-6 md:max-lg:py-4 lg:max-xl:px-4 py-8 rounded-[600px] px-0 md:px-14 md:bg-custom-coral-red mx-auto">
+			<nav class="md:text-[#FFF] mt-3 md:mt-[50px] font-medium md:max-lg:flex-row-reverse items-center md:font-bold flex justify-between md:max-lg:px-6 md:max-lg:py-4 lg:max-xl:px-4 py-8 rounded-[600px] px-0 md:px-14 md:bg-custom-coral-red mx-auto">
 				<!-- Menu -->					
 				<div class="hidden md:block">
 					<ul class="flex justify-around flex-1 font-medium gap-[30px] text-lg">
@@ -72,7 +72,7 @@
 				<!-- Search -->
 				<div class="relative items-center flex-1 hidden lg:flex ">
 					<input class="py-[18px] text-custom-black pl-7 rounded-[50px] w-full" placeholder="Search" type="text" name="SearchBar" id="search">	
-					<i class="absolute right-0 text-custom-black pr-[30px] fa-solid fa-magnifying-glass"></i>
+					<i class="absolute cursor-pointer right-0 text-custom-black pr-[30px] fa-solid fa-magnifying-glass"></i>
 				</div>
 
 				<!-- Hamburger bars -->
@@ -82,6 +82,12 @@
 							<i class="m-auto text-2xl fa-solid fa-bars"></i>
 						</label>
 					  <ul tabindex="0" class="p-2 shadow dropdown-content menu bg-base-100 rounded-box w-52">
+						<!-- <li> -->
+						<!-- 	<div class="relative items-center"> -->
+						<!-- 		<input class="py-2 text-custom-black pl-2 rounded-[50px] w-full" placeholder="Search" type="text" name="SearchBar" id="search"> -->	
+						<!-- 		<i class="absolute cursor-pointer right-0 text-custom-black pr-[30px] fa-solid fa-magnifying-glass"></i> -->
+						<!-- 	</div> -->
+						<!-- </li> -->	
 						<li><a>Home</a></li>
 						<li><a>About Us</a></li>
 						<li><a>shop</a></li>
@@ -96,77 +102,140 @@
 
 		<!-- Banner Section -->
 		<!-- {{{ -->
-		<section class="">
-			
-<div class="relative z-10 w-full rounded-lg carousel">
-  <div id="slide1" class="relative w-full rounded-lg carousel-item">
-    <img src="./images/banner1.png" class="w-full rounded-lg" />
+		<section>
+
+	<!-- Carousel -->
+	<div class="relative z-10 w-full rounded-lg carousel">
+
+		<!-- Slide 1 -->
+		<div id="slide1" class="relative w-full carousel-item">
+
+			<!-- Image -->
+			<img src="./images/banner1.png" class="w-full" />
+
+			<!-- Overlay -->
+			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
+
+			<!-- Contents -->
+			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
+					Exotic tastes at your<br>doorstep
+				</h1>
+				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
+					We supply highly quality organic products
+				</p>
+				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+					Shop Now
+				</button>
+			</div>
+
+			<!-- Buttons -->
+			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
+				<a href="#slide4" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
+				<a href="#slide2" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+			</div>
+
+		</div> 
+
+		<!-- Slide 2 -->
+		<div id="slide2" class="relative w-full carousel-item">
+
+			<!-- Image -->
+			<img src="./images/banner2.png" class="w-full" />
+
+			<!-- Overlay -->
+			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
+
+			<!-- Contents -->
+			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
+					Exotic tastes at your<br>doorstep
+				</h1>
+				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
+					We supply highly quality organic products
+				</p>
+				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+					Shop Now
+				</button>
+			</div>
+
+			<!-- Buttons -->
+			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
+				<a href="#slide1" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
+				<a href="#slide3" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+			</div>
 
 
-	<!-- Overlay -->
-  <div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
-<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
-	  <h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">Exotic tastes at your<br>doorstep</h1>
-	  <p class="mt-1 mb-4 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">We supply highly quality organic products</p>
-	  <button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">Shop Now</button>
-  </div>
+		</div> 
 
-    <div class="absolute z-30 flex justify-between -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" class="btn btn-sm:p-2 btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-      <a href="#slide2" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
-    </div>
-  </div> 
-  <div id="slide2" class="relative w-full rounded-lg carousel-item">
-    <img src="./images/banner2.png" class="w-full rounded-lg" />
-	
-	<!-- Overlay -->
-<div class="z-20 text-center top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
-	  <h1 class="text-2xl font-extrabold md:text-3xl lg:text-5xl xl:text-7xl">Exotic tastes at your<br>doorstep</h1>
-	  <p class="mt-6 mb-8 text-sm md:text-base lg:text-lg xl:text-xl">We supply highly quality organic products</p>
-	  <button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">Shop Now</button>
-  </div>
+		<!-- Slide 3 -->
+		<div id="slide3" class="relative w-full carousel-item">
+
+			<!-- Image -->
+			<img src="./images/banner3.png" class="w-full" />
+
+			<!-- Overlay -->
+			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
+
+			<!-- Contents -->
+			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
+					Exotic tastes at your<br>doorstep
+				</h1>
+				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
+					We supply highly quality organic products
+				</p>
+				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+					Shop Now
+				</button>
+			</div>
+
+			<!-- Buttons -->
+			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
+				<a href="#slide2" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
+				<a href="#slide4" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+			</div>
 
 
-  <div class="bg-gradient-to-b z-0 from-custom-black rounded-lg to-[#12121200] absolute inset-0"></div>
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-      <a href="#slide3" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
-    </div>
-  </div> 
-  <div id="slide3" class="relative w-full rounded-lg carousel-item">
-    <img src="./images/banner3.png" class="w-full rounded-lg" />
+		</div> 
 
-	<!-- Overlay -->
-<div class="z-20 text-center top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
-	  <h1 class="text-2xl font-extrabold md:text-3xl lg:text-5xl xl:text-7xl">Exotic tastes at your<br>doorstep</h1>
-	  <p class="mt-6 mb-8 text-sm md:text-base lg:text-lg xl:text-xl">We supply highly quality organic products</p>
-	  <button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">Shop Now</button>
-  </div>
+		<!-- Slide 4 -->
+		<div id="slide4" class="relative w-full carousel-item">
 
-  <div class="bg-gradient-to-b z-0 from-custom-black rounded-lg to-[#12121200] absolute inset-0"></div>
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-      <a href="#slide4" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" class="relative w-full rounded-lg carousel-item">
-    <img src="./images/banner4.png" class="w-full rounded-lg" />
+			<!-- Image -->
+			<img src="./images/banner4.png" class="w-full" />
 
-	<!-- Overlay -->
-<div class="z-20 text-center top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
-	  <h1 class="text-2xl font-extrabold md:text-3xl lg:text-5xl xl:text-7xl">Exotic tastes at your<br>doorstep</h1>
-	  <p class="mt-6 mb-8 text-sm md:text-base lg:text-lg xl:text-xl">We supply highly quality organic products</p>
-	  <button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">Shop Now</button>
-  </div>
+			<!-- Overlay -->
+			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
 
-  <div class="bg-gradient-to-b z-0 from-custom-black to-[#12121200] rounded-lg absolute inset-0"></div>
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-      <a href="#slide1" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
-    </div>
-  </div>
-  
-</div>
+			<!-- Contents -->
+			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
+					Exotic tastes at your<br>doorstep
+				</h1>
+				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
+					We supply highly quality organic products
+				</p>
+				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+					Shop Now
+				</button>
+			</div>
+
+			<!-- Buttons -->
+			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
+				<a href="#slide3" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
+				<a href="#slide1" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+
+
 
 <!-- fruits -->
 <div class="hidden lg:flex justify-around z-50 bg-[#FFF] relative bottom-1/2 transform -translate-y-1/2  rounded-lg w-[85%] mx-auto">
