@@ -232,13 +232,8 @@
 
 	</div>
 
-
-
-
-
-
 <!-- fruits -->
-<div class="hidden lg:flex justify-around z-50 bg-[#FFF] relative bottom-1/2 transform -translate-y-1/2  rounded-lg w-[85%] mx-auto">
+<div class="hidden py-4 lg:flex -translate-y-1/2 z-50 left-1/2 transform -translate-x-1/2 justify-around z-50 bg-[#FFF] absolute rounded-lg w-[70%] mx-auto">
 	<div>
 		<img class="mx-auto w-max" src="./images/fruit1.png" alt="">
 		<p class="mx-auto w-max font-medium text-[#12121280] text-xl">Grapes</p>
@@ -260,7 +255,6 @@
 		<p class="mx-auto w-max font-medium text-[#12121280] text-xl">Pomegranate</p>
 	</div>
 </div>
-
 
 		</section>
 		<!-- }}} -->
@@ -359,7 +353,9 @@
 <input type="radio" name="apple" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
 						</div>
 						<div class="card-actions">
-							<button class="font-bold text-custom-coral-red">Details</button>
+							<!-- The button to open modal -->
+							<label for="apple_modal" class="font-bold cursor-pointer opacity-80 hover:opacity-100 text-custom-coral-red">Details</label>
+							<!-- <button class="font-bold text-custom-coral-red">Details</button> -->
 						</div>
 					</div>
 				</div>	
@@ -392,7 +388,9 @@
 <input type="radio" name="orange" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
 						</div>
 						<div class="card-actions">
-							<button class="font-bold text-custom-coral-red">Details</button>
+							<!-- The button to open modal -->
+							<label for="orange_modal" class="font-bold cursor-pointer opacity-80 hover:opacity-100 text-custom-coral-red">Details</label>
+							<!-- <button class="font-bold text-custom-coral-red">Details</button> -->
 						</div>
 					</div>
 				</div>	
@@ -425,7 +423,9 @@
 <input type="radio" name="dragon" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
 						</div>
 						<div class="card-actions">
-							<button class="font-bold text-custom-coral-red">Details</button>
+							<!-- The button to open modal -->
+							<label for="dragon_modal" class="font-bold cursor-pointer opacity-80 hover:opacity-100 text-custom-coral-red">Details</label>
+							<!-- <button class="font-bold text-custom-coral-red">Details</button> -->
 						</div>
 					</div>
 				</div>	
@@ -458,7 +458,9 @@
 <input type="radio" name="banana" class="bg-custom-coral-red mask mask-star-2 mask-half-2" />
 						</div>
 						<div class="card-actions">
-							<button class="font-bold text-custom-coral-red">Details</button>
+							<!-- The button to open modal -->
+							<label for="banana_modal" class="font-bold cursor-pointer opacity-80 hover:opacity-100 text-custom-coral-red">Details</label>
+							<!-- <button class="font-bold text-custom-coral-red">Details</button> -->
 						</div>
 					</div>
 				</div>	
@@ -818,7 +820,7 @@
 							</h5>		
 							<hr class="w-[100px] text-[#12121280] mt-[21px] mb-4">
 							<p class="leading-[26px] text-[#12121260] font-medium max-w-[354px]">
-								Our fruits are packed with neutrients promoting a
+								Our fruits are packed with nutrients promoting a
 								healthier lifystyle for you and your family.
 							</p>
 						</div>
@@ -1065,6 +1067,121 @@
 		<!-- }}} -->
 	</footer>
 	<!-- }}} -->
+
+<!-- Modals -->
+<!-- {{{ -->
+<!-- Modal For Apple -->
+<input type="checkbox" id="apple_modal" class="modal-toggle" />
+<div class="modal">
+  <div class="flex flex-col justify-center modal-box">
+	  <!-- Content -->
+	<div class="flex flex-col justify-center text-center">
+		<div class="mx-auto my-10">
+			<img class="" src="./images/fruit6.png" alt="">		
+		</div>
+		<h3 class="text-[40px] text-custom-black font-extrabold">Apple</h3>
+		<p class="py-4 mx-auto max-w-[415px] font-medium leading-[28px] text-[#12121260]">
+			Nature's perfect blend of sweetness and tartness. Apples are crispy and crunchy fruits 
+			with rich flavor. Packed with essential nutrients and dietary fiber which promotes a healthy 
+			hearh and aid in digestion.
+		</p>
+	</div>
+
+	<!-- Buttons -->
+	<div class="flex items-center justify-center modal-action">
+		  <label for="apple_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+
+		<div>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+		</div>
+	</div>
+  </div>
+</div>
+
+<!-- Modal For Orange -->
+<input type="checkbox" id="orange_modal" class="modal-toggle" />
+<div class="modal">
+  <div class="flex flex-col justify-center modal-box">
+	  <!-- Content -->
+	<div class="flex flex-col justify-center text-center">
+		<div class="mx-auto my-10">
+			<img class="" src="./images/fruit7.png" alt="">		
+		</div>
+		<h3 class="text-[40px] text-custom-black font-extrabold">Orange</h3>
+		<p class="py-4 mx-auto max-w-[415px] font-medium leading-[28px] text-[#12121260]">
+			A vibrant citrusy fruit with a refreshing taste and numerous health benefit. With a rich 
+			dose of Vitamin C, oranges keeps your immune system strong. Embrace the natural goodness of 
+			orange as part of balanced diet.
+		</p>
+	</div>
+
+	<!-- Buttons -->
+	<div class="flex items-center justify-center modal-action">
+		  <label for="orange_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+
+		<div>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+		</div>
+	</div>
+  </div>
+</div>
+
+<!-- Modal For Red Dragon -->
+<input type="checkbox" id="dragon_modal" class="modal-toggle" />
+<div class="modal">
+  <div class="flex flex-col justify-center modal-box">
+	  <!-- Content -->
+	<div class="flex flex-col justify-center text-center">
+		<div class="mx-auto my-10">
+			<img class="" src="./images/fruit8.png" alt="">		
+		</div>
+		<h3 class="text-[40px] text-custom-black font-extrabold">Red Dragon</h3>
+		<p class="py-4 mx-auto max-w-[415px] font-medium leading-[28px] text-[#12121260]">
+			An exotic and captivating fruit that combines a striking appearance with an exquisite taste.
+			With a crimson hue and dragon-like scale, this fruit is a true marvel to behold. A fruit
+			to leave a lasting imression on you taste buds.
+		</p>
+	</div>
+
+	<!-- Buttons -->
+	<div class="flex items-center justify-center modal-action">
+		  <label for="dragon_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+
+		<div>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+		</div>
+	</div>
+  </div>
+</div>
+
+<!-- Modal For Banana -->
+<input type="checkbox" id="banana_modal" class="modal-toggle" />
+<div class="modal">
+  <div class="flex flex-col justify-center modal-box">
+	  <!-- Content -->
+	<div class="flex flex-col justify-center text-center">
+		<div class="mx-auto my-10">
+			<img class="" src="./images/fruit9.png" alt="">		
+		</div>
+		<h3 class="text-[40px] text-custom-black font-extrabold">Banana</h3>
+		<p class="py-4 mx-auto max-w-[415px] font-medium leading-[28px] text-[#12121260]">
+			Wrapped in a vibrant yellow peel, these creamy delights are a storehouse of energy and 
+			nutrients. Whether you enjoy them as you quick on-the-go snack or incorporate into you 
+			favorite recipe, They never disappoint.
+		</p>
+	</div>
+
+	<!-- Buttons -->
+	<div class="flex items-center justify-center modal-action">
+		  <label for="banana_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+
+		<div>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+		</div>
+	</div>
+  </div>
+</div>
+<!-- }}} -->
 
 </body>
 </html>
