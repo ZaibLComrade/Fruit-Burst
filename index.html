@@ -399,22 +399,24 @@
 
 		<!-- Meet The Team -->
 		<!-- {{{ -->
-		<section class="mt-[140px]">
+		<section class="mt-[140px] relative">
 			<!-- Image -->
-			<div class="relative rounded-lg">
-				<img src="./images/team.png" class="w-full" alt="">
+			<div class="rounded-lg z-[1] md:relative absolute inset-0">
+				<img src="./images/team.png" class="object-cover w-full h-full md:h-auto" alt="">
+			</div>
+			
 
 				<!-- Overlay -->
-		<div class="bg-[#12121270] rounded-lg absolute inset-0 border-2"></div>
+		<div class="bg-[#12121270] z-[2] rounded-lg absolute inset-0"></div>
 
 			<!-- Team -->
-			<div class="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+			<div class="static w-full relative z-[3] lg:absolute lg:top-1/2 px-[30px] md:px-0 py-6 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2">
 				<!-- Text -->
 				<div class="text-center space-y-6">
-					<h2 class="text-[#FFF] font-extrabold text-5xl">
+					<h2 class="text-[#FFF] font-extrabold text-xl md:text-3xl lg:text-5xl">
 						Meet the team
 					</h2>
-					<p class="text-[#FFF] max-w-[615px] mx-auto font-medium leading-[26px]">
+					<p class="text-[#FFF] max-w-[615px] text-sm md:text-base mx-auto font-medium leading-[26px]">
 						Contrary to popular belief, is not simply random text.
 						It has roots in a piece of classical Latin literature from
 						45 BC, making it over 2000 years old.
@@ -422,20 +424,20 @@
 				</div>
 
 				<!-- Images -->
-				<div class="flex justify-center mt-12 gap-[120px]">
-					
+				<div class="flex justify-center flex-col md:flex-row mt-12 gap-6 lg:gap-[120px]">
+
 					<!-- img1 -->
 					<!-- {{{ -->
 					<div class="flex text-[#FFF] flex-col items-center text-center">
 						<div class="mb-8">
-							<img src="./images/member1.png" alt="">	
+							<img src="./images/member1.png" alt="">
 						</div>
 						<h5 class="mb-0 text-2xl font-bold">Awlad Hossain</h5>
 						<h6 class="mt-2 text-base font-medium">Fruit Expert</h6>
 
 						<!-- Socials -->
 						<div class="flex mt-4 gap-3">
-							<!-- Facebook -->	
+							<!-- Facebook -->
 							<!-- {{{ -->
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
   <g clip-path="url(#clip0_11_4811)">
@@ -915,7 +917,7 @@
 
 		<!-- Logo -->	
 		<section>
-			<div class="flex items-center flex-1 justify-center font-bold text-[40px] text-right gap-4">
+			<div class="flex items-center flex-1 justify-center font-bold md:text-[40px] text-right gap-4">
 				<img src="./images/logo.png" alt="">	
 				<h1 class="text-[#FFF]">Fruit Burst</h1>
 			</div>
@@ -923,7 +925,7 @@
 
 		<!-- Services -->
 		<section class="mt-[50px] text-center">
-			<div class="flex gap-[60px] text-lg font-semibold text-[#FFF] mx-auto w-max">
+			<div class="flex gap-[60px] flex-wrap w-[90%] px-9 items-center justify-center text-sm md:text-lg font-semibold text-[#FFF] mx-auto">
 				<p>Home</p>	
 				<p>About Us</p>
 				<p>Shop</p>
