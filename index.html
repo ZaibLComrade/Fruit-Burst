@@ -14,7 +14,27 @@
 	<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
 	<!-- Stylesheet -->
-	<link rel="stylesheet" href="./styles.css">
+	<!-- <link rel="stylesheet" href="./styles.css"> -->
+	
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+	  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'custom-coral-red': '#F85559',
+			'custom-black': '#121212',
+          }
+        }
+      }
+    }
+  </script>
+
 
 <style>
 /* Added missing font weights */
@@ -52,7 +72,7 @@
 		<!-- Navbar Section -->
 		<!-- {{{ -->
 		<section>
-			<nav class="md:text-[#FFF] mt-3 md:mt-[50px] font-medium md:max-lg:flex-row-reverse items-center md:font-bold flex justify-between md:max-lg:px-6 md:max-lg:py-4 lg:max-xl:px-4 py-8 rounded-[600px] px-0 md:px-14 md:bg-custom-coral-red mx-auto flex-wrap">
+			<nav class="md:text-white mt-3 md:mt-[50px] font-medium md:max-lg:flex-row-reverse items-center md:font-bold flex justify-between md:max-lg:px-6 md:max-lg:py-4 lg:max-xl:px-4 py-8 rounded-[600px] px-0 md:px-14 md:bg-custom-coral-red mx-auto flex-wrap">
 				<!-- Menu -->					
 				<div class="hidden md:block">
 					<ul class="flex justify-around flex-1 font-medium gap-[30px] text-lg">
@@ -117,22 +137,22 @@
 			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
 
 			<!-- Contents -->
-			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+			<div class="absolute z-20 w-full text-center text-white top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 font-lato">
 				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
 					Exotic tastes at your<br>doorstep
 				</h1>
 				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
 					Handpicked, High-Quality Organic Fruits
 				</p>
-				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+				<button class="border-custom-coral-red text-white py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
 					Shop Now
 				</button>
 			</div>
 
 			<!-- Buttons -->
 			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
-				<a href="#slide4" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-				<a href="#slide2" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+				<a href="#slide4" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❮</a> 
+				<a href="#slide2" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❯</a>
 			</div>
 
 		</div> 
@@ -147,22 +167,22 @@
 			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
 
 			<!-- Contents -->
-			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+			<div class="absolute z-20 w-full text-center text-white top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 font-lato">
 				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
 					Exotic tastes at your<br>doorstep
 				</h1>
 				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
 					Handpicked, High-Quality Organic Fruits
 				</p>
-				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+				<button class="border-custom-coral-red text-white py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
 					Shop Now
 				</button>
 			</div>
 
 			<!-- Buttons -->
 			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
-				<a href="#slide1" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-				<a href="#slide3" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+				<a href="#slide1" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❮</a> 
+				<a href="#slide3" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❯</a>
 			</div>
 
 
@@ -178,22 +198,22 @@
 			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
 
 			<!-- Contents -->
-			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+			<div class="absolute z-20 w-full text-center text-white top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 font-lato">
 				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
 					Exotic tastes at your<br>doorstep
 				</h1>
 				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
 					Handpicked, High-Quality Organic Fruits
 				</p>
-				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+				<button class="border-custom-coral-red text-white py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
 					Shop Now
 				</button>
 			</div>
 
 			<!-- Buttons -->
 			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
-				<a href="#slide2" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-				<a href="#slide4" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+				<a href="#slide2" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❮</a> 
+				<a href="#slide4" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❯</a>
 			</div>
 
 
@@ -209,22 +229,22 @@
 			<div class="bg-gradient-to-b rounded-lg z-0 from-custom-black to-[#12121200] absolute inset-0"></div>
 
 			<!-- Contents -->
-			<div class="z-20 text-center w-full top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-[#FFF] absolute font-lato">
+			<div class="absolute z-20 w-full text-center text-white top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 font-lato">
 				<h1 class="text-2xl font-extrabold md:text-3xl lg:text-3xl xl:text-7xl">
 					Exotic tastes at your<br>doorstep
 				</h1>
 				<p class="mt-1 mb-1 text-sm md:mt-6 md:mb-8 md:text-base lg:text-lg xl:text-xl">
 					Handpicked, High-Quality Organic Fruits
 				</p>
-				<button class="border-custom-coral-red text-[#FFF] py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
+				<button class="border-custom-coral-red text-white py-[9px] px-[18px] text-lg xl:text-xl lg:py-4 xl:py-5 lg:px-[26px] xl:px-[30px] rounded-lg font-bold lg:font-extrabold bg-custom-coral-red">
 					Shop Now
 				</button>
 			</div>
 
 			<!-- Buttons -->
 			<div class="absolute z-30 flex justify-between -translate-y-1/2 left-1 right-1 md:left-5 md:right-5 top-1/2">
-				<a href="#slide3" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❮</a> 
-				<a href="#slide1" class="btn btn-circle border-0 bg-custom-black text-[#FFF] hover:text-custom-black">❯</a>
+				<a href="#slide3" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❮</a> 
+				<a href="#slide1" class="text-white border-0 btn btn-circle bg-custom-black hover:text-custom-black">❯</a>
 			</div>
 
 
@@ -233,7 +253,7 @@
 	</div>
 
 <!-- fruits -->
-<div class="hidden py-4 lg:flex -translate-y-1/2 z-50 shadow-lg left-1/2 transform -translate-x-1/2 justify-around z-50 bg-[#FFF] absolute rounded-lg w-[70%] mx-auto">
+<div class="hidden py-4 lg:flex -translate-y-1/2 z-50 shadow-lg left-1/2 transform -translate-x-1/2 justify-around z-50 bg-white absolute rounded-lg w-[70%] mx-auto">
 	<div>
 		<img class="mx-auto w-max" src="./images/fruit1.png" alt="">
 		<p class="mx-auto w-max font-medium text-[#12121280] text-xl">Grapes</p>
@@ -470,7 +490,7 @@
 
 			<!-- Button -->
 			<div class="mx-auto mt-12 w-max">
-				<button class="px-[30px] rounded-lg py-5 bg-custom-coral-red text-[#FFF] text-xl font-extrabold">Shop All</button>
+				<button class="px-[30px] rounded-lg py-5 bg-custom-coral-red text-white text-xl font-extrabold">Shop All</button>
 			</div>
 
 		</section>
@@ -495,10 +515,10 @@
 			<div class="static w-full relative z-[3] lg:absolute rounded-lg lg:top-1/2 px-[30px] md:px-0 py-6 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2">
 				<!-- Text -->
 				<div class="text-center space-y-6">
-					<h2 class="text-[#FFF] font-extrabold text-xl md:text-3xl lg:text-5xl">
+					<h2 class="text-xl font-extrabold text-white md:text-3xl lg:text-5xl">
 						Meet the team
 					</h2>
-					<p class="text-[#FFF] max-w-[615px] text-sm md:text-base mx-auto font-medium leading-[26px]">
+					<p class="text-white max-w-[615px] text-sm md:text-base mx-auto font-medium leading-[26px]">
 						A glimpse into the talented individuals who make everything we do possible. More than just a team, We are a fruit-loving family. Get to know the faces behind the fruits and trust us to deliver natures juicy delights right to your doorstep!
 					</p>
 				</div>
@@ -508,7 +528,7 @@
 
 					<!-- img1 -->
 					<!-- {{{ -->
-					<div class="flex text-[#FFF] flex-col items-center text-center">
+					<div class="flex flex-col items-center text-center text-white">
 						<div class="mb-8">
 							<img src="./images/member1.png" alt="">
 						</div>
@@ -569,7 +589,7 @@
 
 					<!-- img2 -->
 					<!-- {{{ -->
-					<div class="flex text-[#FFF] flex-col items-center text-center">
+					<div class="flex flex-col items-center text-center text-white">
 						<div class="mb-8">
 							<img src="./images/member2.png" alt="">	
 						</div>
@@ -630,7 +650,7 @@
 
 					<!-- img3 -->
 					<!-- {{{ -->
-					<div class="flex text-[#FFF] flex-col items-center text-center">
+					<div class="flex flex-col items-center text-center text-white">
 						<div class="mb-8">
 							<img src="./images/member3.png" alt="">	
 						</div>
@@ -691,7 +711,7 @@
 
 					<!-- img4 -->
 					<!-- {{{ -->
-					<div class="flex text-[#FFF] flex-col items-center text-center">
+					<div class="flex flex-col items-center text-center text-white">
 						<div class="mb-8">
 							<img src="./images/member4.png" alt="">	
 						</div>
@@ -1000,13 +1020,13 @@
 		<section>
 			<div class="flex items-center flex-1 justify-center font-bold text-[27px] md:text-[40px] text-right gap-4">
 				<img src="./images/logo.png" alt="">	
-				<h1 class="text-[#FFF]">Fruit Burst</h1>
+				<h1 class="text-white">Fruit Burst</h1>
 			</div>
 		</section>
 
 		<!-- Services -->
 		<section class="mt-[50px] text-center">
-			<div class="flex gap-[60px] flex-wrap px-9 items-center justify-center text-sm md:text-lg font-semibold text-[#FFF] mx-auto">
+			<div class="flex gap-[60px] flex-wrap px-9 items-center justify-center text-sm md:text-lg font-semibold text-white mx-auto">
 				<p><a href="#">Home</a></p>	
 				<p><a href="#">About Us</a></p>
 				<p><a href="#">Shop</a></p>
@@ -1108,10 +1128,10 @@
 
 	<!-- Buttons -->
 	<div class="flex items-center justify-center modal-action">
-		  <label for="apple_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+		  <label for="apple_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-white bg-white hover:bg-custom-coral-red">Close</label>
 
 		<div>
-			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-white border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-white">Buy Now</button>
 		</div>
 	</div>
   </div>
@@ -1156,10 +1176,10 @@
 
 	<!-- Buttons -->
 	<div class="flex items-center justify-center modal-action">
-		  <label for="orange_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+		  <label for="orange_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-white bg-white hover:bg-custom-coral-red">Close</label>
 
 		<div>
-			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-white border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-white">Buy Now</button>
 		</div>
 	</div>
   </div>
@@ -1204,10 +1224,10 @@
 
 	<!-- Buttons -->
 	<div class="flex items-center justify-center modal-action">
-		  <label for="dragon_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+		  <label for="dragon_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-white bg-white hover:bg-custom-coral-red">Close</label>
 
 		<div>
-			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-white border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-white">Buy Now</button>
 		</div>
 	</div>
   </div>
@@ -1253,10 +1273,10 @@
 
 	<!-- Buttons -->
 	<div class="flex items-center justify-center modal-action">
-		  <label for="banana_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-[#FFF] bg-[#FFF] hover:bg-custom-coral-red">Close</label>
+		  <label for="banana_modal" class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-custom-coral-red border-custom-coral-red border-2 hover:text-white bg-white hover:bg-custom-coral-red">Close</label>
 
 		<div>
-			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-[#FFF] border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-[#FFF]">Buy Now</button>
+			<button class="px-[30px] py-[20px] text-[20px] font-extrabold rounded-lg text-white border-custom-coral-red border-2 hover:text-custom-coral-red bg-custom-coral-red hover:bg-white">Buy Now</button>
 		</div>
 	</div>
   </div>
