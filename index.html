@@ -202,14 +202,14 @@
 	<main class="container mx-auto mt-36">
 		<!-- Deal of the day -->			
 		<!-- {{{ -->
-		<section>
+		<section class="px-5">
 			<!-- Headline -->
 			<!-- {{{ -->
-			<div class="flex items-center justify-between">
+			<div class="flex flex-col items-center justify-between lg:flex-row">
 				<!-- Texts -->
-				<div class="text-left space-y-6">
-					<h2 class="text-5xl font-extrabold text-custom-black">Deal of the day</h2>
-					<p class="text-base max-w-[615px] font-medium text-custom-black">
+				<div class="mb-5 text-center lg:mb-0 lg:text-left space-y-6">
+					<h2 class="text-xl font-extrabold lg:text-5xl md:text-3xl text-custom-black">Deal of the day</h2>
+					<p class="md:text-base leading-[26px] text-[#12121260] text-sm max-w-[615px] font-medium">
 						Contrary to popular belief, is not simply random text.
 						It has roots in a piece of classical Latin literature
 						from 45 BC, making it over 2000 years old.
@@ -221,27 +221,36 @@
 
 	<div class="text-center grid grid-flow-col gap-5 auto-cols-max">
 	  <div class="flex flex-col">
-		<span class="text-5xl countdown">
-		  <span style="--value:29;"></span>
-		</span>
+		  <div class="relative flex items-center">
+			<span class="text-5xl countdown">
+			  <span style="--value:29;"></span>
+			</span>
+			<i class="absolute -right-3 fa-solid fa-ellipsis-vertical"></i>
+		  </div>
 		days
 	  </div> 
 	  <div class="flex flex-col">
-		<span class="text-5xl countdown">
-		  <span style="--value:15;"></span>
-		</span>
+		<div class="relative flex items-center">
+			<span class="text-5xl countdown">
+			  <span style="--value:15;"></span>
+			</span>
+			<i class="absolute -right-3 fa-solid fa-ellipsis-vertical"></i>
+		</div>
 		hours
 	  </div> 
 	  <div class="flex flex-col">
-		<span class="text-5xl countdown">
-		  <span style="--value:25;"></span>
-		</span>
+		<div class="relative flex items-center">
+			<span class="text-5xl countdown">
+			  <span style="--value:25;"></span>
+			</span>
+			<i class="absolute -right-3 fa-solid fa-ellipsis-vertical"></i>
+		</div>
 		min
 	  </div> 
 	  <div class="flex flex-col">
-		<span class="text-5xl countdown">
-		  <span style="--value:8;"></span>
-		</span>
+			<span class="text-5xl countdown">
+			  <span style="--value:08;"></span>
+			</span>
 		sec
 	  </div>
 	</div>
@@ -399,10 +408,13 @@
 
 		<!-- Meet The Team -->
 		<!-- {{{ -->
-		<section class="mt-[140px] relative">
+		<section class="mt-[140px] relative px-5 lg:px-0 rounded-lg">
+
+			<div class="relative rounded-lg">
+
 			<!-- Image -->
 			<div class="rounded-lg z-[1] md:relative absolute inset-0">
-				<img src="./images/team.png" class="object-cover w-full h-full md:h-auto" alt="">
+				<img src="./images/team.png" class="object-cover w-full h-full rounded-lg md:h-auto" alt="">
 			</div>
 			
 
@@ -410,7 +422,7 @@
 		<div class="bg-[#12121270] z-[2] rounded-lg absolute inset-0"></div>
 
 			<!-- Team -->
-			<div class="static w-full relative z-[3] lg:absolute lg:top-1/2 px-[30px] md:px-0 py-6 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2">
+			<div class="static w-full relative z-[3] lg:absolute rounded-lg lg:top-1/2 px-[30px] md:px-0 py-6 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2">
 				<!-- Text -->
 				<div class="text-center space-y-6">
 					<h2 class="text-[#FFF] font-extrabold text-xl md:text-3xl lg:text-5xl">
@@ -672,12 +684,14 @@
 
 				</div>		
 			</div>
+
+		</div>
 		</section>
 		<!-- }}} -->
 
 		<!-- Why Choose Us -->
 		<!-- {{{ -->
-		<section class="mt-[140px] space-y-12">
+		<section class="mt-[140px] space-y-12 px-5 md:px-0">
 			<!-- Headline -->
 			<div class="text-center space-y-6">
 				<h3 class="text-5xl font-extrabold text-custom-black">Why Choose Us</h3>	
